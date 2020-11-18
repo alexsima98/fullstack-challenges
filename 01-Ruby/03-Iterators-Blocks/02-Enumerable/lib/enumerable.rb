@@ -46,6 +46,6 @@ def sorted_pairs(array)
   # got: [["say", "my"], ["name", "say"], ["my", "name"]]
   # got: [["my", "name"], ["name", "say"], ["say", "my"]]
   a = []
-   array.each_slice(2) { |s| a << s.sort }
-   return a
+  array.each_slice(2) { |s| a << s.sort }
+  return a
 end

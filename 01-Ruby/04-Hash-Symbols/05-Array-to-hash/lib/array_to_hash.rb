@@ -3,7 +3,7 @@ def array_to_hash(array)
   has = Hash.new
   if block_given?
     array.each_with_index do |key, index|
-      has["key#{index}"] = key
+      has[yield(index)] = key
     end
   else
     array.each_with_index do |key, index|
